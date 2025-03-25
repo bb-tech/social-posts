@@ -1,75 +1,23 @@
-# Nuxt Minimal Starter
+## Installation
+1. Clone the repository:
+   
+   git clone https://github.com/bb-tech/social-posts
+2. Navigate to the project directory:
+   
+    cd social-posts
+3. Install dependencies 
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+    npm install
+4. Start the development server on http://localhost:3000:
+   
+    npm run dev
+    
+## Description
+- Server-Side Rendering for fetching initial data. It is good for SEO and performance especially for news/posts website. 
+- Composable for search/filter functionality makes this functionality reusable and easier to test.
+- Debounce in search improves performance and reduces unnecessary computations.
+    
+## Improvements
+- I would use pagination and lazy loading if json contains a large amount of data
+- Filtering and search on the backend is also a good practice for a wesbite with many posts
+- Additionally, I would include tests
